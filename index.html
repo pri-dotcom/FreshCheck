@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshCheck — Know Your Food, Protect Your Health | Community Service Project</title>
+  <meta name="description" content="AI-Based Detection of Unsafe Fruits and Vegetables. A college Community Service Project by the Department of Computer Science and Engineering educating the public on identifying visible produce spoilage.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= TOP COMMUNITY PROJECT NOTIFICATION ================= -->
+  <div class="top-announcement">
+    <div class="container announcement-content">
+      <span class="badge-pill">🎓 College Community Service Project</span>
+      <span class="announcement-text">
+        <strong>FreshCheck:</strong> AI-Based Detection of Unsafe Fruits and Vegetables &bull; Department of Computer Science and Engineering
+      </span>
+    </div>
+  </div>
+
+  <!-- ================= NAVIGATION BAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="FreshCheck Home">
+        <div class="logo-icon-wrapper">
+          <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2C6.5 2 2 6.5 2 12c0 3.6 1.9 6.8 4.8 8.5L12 22l5.2-1.5C20.1 18.8 22 15.6 22 12c0-5.5-4.5-10-10-10z" fill="currentColor" fill-opacity="0.15" stroke="none"/>
+            <path d="M2 22c1.25-.97 2.45-2.02 3.6-3.15C8.95 15.5 11 11.5 11 7c0-2.5-1.5-4.5-1.5-4.5S16 3 18.5 7.5c2 3.6 1.8 8.2-.5 11.5L2 22z"/>
+            <path d="M9 12c3.5 1 6.5 4 8 8"/>
+          </svg>
+          <div class="logo-pulse"></div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Fresh<span class="brand-highlight">Check</span></span>
+          <span class="brand-tagline">Know Your Food, Protect Your Health</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#check-produce" class="nav-link">Check Produce</a>
+        <a href="#fruits-vegetables" class="nav-link">Fruits &amp; Vegetables</a>
+        <a href="#spoilage-guide" class="nav-link">Spoilage Guide</a>
+        <a href="#safety-tips" class="nav-link">Food Safety Tips</a>
+        <a href="#about-project" class="nav-link">About Project</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#check-produce" class="btn btn-primary btn-sm btn-check-now">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          Check Now
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= SECTION 1: HOME PAGE / HERO ================= -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="community-tag">
+            <span class="tag-icon">🌱</span>
+            <span>Community Service Project &bull; Public Health Outreach</span>
+          </div>
+
+          <h1 class="hero-title">
+            Know What's Fresh. <span class="highlight-text">Choose What's Safe.</span>
+          </h1>
+
+          <p class="hero-description">
+            Your simple guide to identifying visible signs of spoilage in fruits and vegetables. Make informed food choices and promote healthier communities.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#check-produce" class="btn btn-primary btn-lg shadow-lift">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                <circle cx="12" cy="13" r="4"/>
+              </svg>
+              Check Your Produce
+            </a>
+            <a href="#fruits-vegetables" class="btn btn-secondary btn-lg">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+              Explore Awareness Guide
+            </a>
+          </div>
+
+          <div class="hero-trust-badges">
+            <div class="trust-badge-item">
+              <span class="badge-icon">✓</span>
+              <span>100% In-Browser Privacy</span>
+            </div>
+            <div class="trust-badge-item">
+              <span class="badge-icon">✓</span>
+              <span>Zero Complex ML / No Paid APIs</span>
+            </div>
+            <div class="trust-badge-item">
+              <span class="badge-icon">✓</span>
+              <span>Educational Visual Screening</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            <div class="floating-badge badge-fresh">
+              <span class="badge-dot green"></span>
+              <span>Appears Fresh &amp; Firm</span>
+            </div>
+            <div class="floating-badge badge-warning">
+              <span class="badge-dot orange"></span>
+              <span>Discoloration Alert</span>
+            </div>
+
+            <div class="hero-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=700&q=80" alt="Fresh wholesome fruits and vegetables basket" class="hero-main-img" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=80'">
+              <div class="hero-img-overlay">
+                <div class="scanner-laser-line"></div>
+                <div class="overlay-scan-card">
+                  <div class="scan-pill">
+                    <span class="pulse-indicator"></span>
+                    <span>Ready for Visual Screening</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Feature Cards Below Hero -->
+      <div class="container feature-cards-container">
+        <div class="feature-cards-grid">
+          <div class="feature-card">
+            <div class="feature-icon-circle green-bg">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+              </svg>
+            </div>
+            <div class="feature-tag">Feature 01</div>
+            <h3 class="feature-title">Easy Visual Checking</h3>
+            <p class="feature-desc">Upload an image and examine visible signs of possible spoilage using basic canvas color and blemish analysis.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-circle amber-bg">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M12 8v4"/><path d="M12 16h.01"/>
+              </svg>
+            </div>
+            <div class="feature-tag">Feature 02</div>
+            <h3 class="feature-title">Food Safety Awareness</h3>
+            <p class="feature-desc">Learn how to recognize common spoilage indicators including molds, bacterial softening, and decay patterns.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-circle teal-bg">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12c0 5.5 4.5 10 10 10s10-4.5 10-10c0-5.5-4.5-10-10-10z"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <div class="feature-tag">Feature 03</div>
+            <h3 class="feature-title">Healthy Food Choices</h3>
+            <p class="feature-desc">Understand how to select and store fruits and vegetables properly to extend freshness and prevent household waste.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awareness Pillars (No fake percentages) -->
+      <div class="container awareness-pillars-wrapper">
+        <div class="awareness-banner-box">
+          <div class="awareness-item">
+            <div class="awareness-icon-wrap">🔍</div>
+            <div class="awareness-info">
+              <h4>Importance of Checking Produce</h4>
+              <p>Regular visual checks help families avoid consuming decayed food and catch spoilage before it spreads.</p>
+            </div>
+          </div>
+          <div class="awareness-divider"></div>
+          <div class="awareness-item">
+            <div class="awareness-icon-wrap">⚠️</div>
+            <div class="awareness-info">
+              <h4>Understanding Visible Spoilage</h4>
+              <p>Distinguish between natural harmless ripening freckles and harmful microbial or fungal lesions.</p>
+            </div>
+          </div>
+          <div class="awareness-divider"></div>
+          <div class="awareness-item">
+            <div class="awareness-icon-wrap">♻️</div>
+            <div class="awareness-info">
+              <h4>Reducing Food Wastage</h4>
+              <p>Learn proper storage methods so good produce is not thrown away prematurely due to cosmetic defects.</p>
+            </div>
+          </div>
+          <div class="awareness-divider"></div>
+          <div class="awareness-item">
+            <div class="awareness-icon-wrap">🥗</div>
+            <div class="awareness-info">
+              <h4>Promoting Healthy Habits</h4>
+              <p>Empower students, hostel residents, and families to practice proactive food hygiene every day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: MAIN FEATURE – CHECK YOUR PRODUCE ================= -->
+    <section class="section check-section" id="check-produce">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Interactive Screening Tool</span>
+          <h2 class="section-title">Check Your Fruits &amp; Vegetables</h2>
+          <p class="section-subtitle">
+            Upload a clear image of your fruit or vegetable to examine its visible external appearance.
+          </p>
+        </div>
+
+        <!-- Prominent Food Safety & Scientific Disclaimer -->
+        <div class="prominent-disclaimer-card">
+          <div class="disclaimer-alert-header">
+            <div class="disclaimer-alert-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <h4>Important Public Food Safety Disclaimer</h4>
+          </div>
+          <p class="disclaimer-alert-body">
+            FreshCheck is an educational awareness and initial visual screening tool. It examines only the external appearance of fruits and vegetables. It cannot detect bacteria, viruses, pesticides, chemicals, toxins or other invisible contamination. A fruit or vegetable that appears fresh is not necessarily safe to consume. Always follow proper food hygiene, washing and storage practices. Do not depend solely on this tool to decide whether food is safe.
+          </p>
+        </div>
+
+        <!-- Two Column Scanner Interface -->
+        <div class="scanner-interface-grid">
+          
+          <!-- LEFT COLUMN: Input, Camera & Produce Selection -->
+          <div class="tool-card tool-input-card">
+            
+            <!-- Step 1: Select Produce -->
+            <div class="input-step-group">
+              <label for="produceSelect" class="step-label">
+                <span class="step-num">1</span>
+                <span>Select Produce Type:</span>
+              </label>
+              <div class="select-wrapper">
+                <select id="produceSelect" class="produce-dropdown">
+                  <optgroup label="FRUITS">
+                    <option value="apple" selected>Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="mango">Mango</option>
+                    <option value="orange">Orange</option>
+                    <option value="pomegranate">Pomegranate</option>
+                    <option value="papaya">Papaya</option>
+                    <option value="guava">Guava</option>
+                    <option value="grapes">Grapes</option>
+                    <option value="watermelon">Watermelon</option>
+                    <option value="pineapple">Pineapple</option>
+                    <option value="sapota">Sapota (Chikoo)</option>
+                    <option value="sweetlime">Sweet Lime (Mosambi)</option>
+                    <option value="lemon">Lemon</option>
+                    <option value="muskmelon">Muskmelon (Kharbuja)</option>
+                  </optgroup>
+                  <optgroup label="VEGETABLES">
+                    <option value="tomato">Tomato</option>
+                    <option value="potato">Potato</option>
+                    <option value="onion">Onion</option>
+                    <option value="brinjal">Brinjal (Eggplant)</option>
+                    <option value="carrot">Carrot</option>
+                    <option value="cabbage">Cabbage</option>
+                    <option value="cauliflower">Cauliflower</option>
+                    <option value="cucumber">Cucumber</option>
+                    <option value="capsicum">Capsicum (Bell Pepper)</option>
+                    <option value="okra">Okra (Bhindi)</option>
+                    <option value="spinach">Spinach (Palak)</option>
+                    <option value="bittergourd">Bitter Gourd (Karela)</option>
+                    <option value="bottlegourd">Bottle Gourd (Lauki)</option>
+                  </optgroup>
+                </select>
+              </div>
+              <p class="step-hint">Calibrates color analysis against typical skin hues (e.g. natural banana freckles vs apple rot).</p>
+            </div>
+
+            <!-- Step 2: Choose Input Mode (Upload, Camera, or Quick Test Samples) -->
+            <div class="input-step-group">
+              <label class="step-label">
+                <span class="step-num">2</span>
+                <span>Provide Produce Photo:</span>
+              </label>
+
+              <div class="input-mode-tabs">
+                <button type="button" class="mode-btn active" id="btnModeUpload" data-tab="uploadTab">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="17 8 12 3 7 8"/>
+                    <line x1="12" y1="3" x2="12" y2="15"/>
+                  </svg>
+                  Upload Image
+                </button>
+                <button type="button" class="mode-btn" id="btnModeCamera" data-tab="cameraTab">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                    <circle cx="12" cy="13" r="4"/>
+                  </svg>
+                  Capture with Camera
+                </button>
+                <button type="button" class="mode-btn" id="btnModeSamples" data-tab="samplesTab">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/>
+                  </svg>
+                  Quick Test Specimens
+                </button>
+              </div>
+
+              <!-- Tab Panel 1: File Upload -->
+              <div class="tab-panel active" id="uploadTab">
+                <div class="upload-dropzone" id="uploadDropzone">
+                  <input type="file" id="imageFileInput" accept=".jpg, .jpeg, .png, .webp" class="visually-hidden">
+                  <div class="dropzone-interior">
+                    <div class="upload-icon-circle">
+                      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
+                        <path d="M12 12v9"/><path d="m16 16-4-4-4 4"/>
+                      </svg>
+                    </div>
+                    <h4>Choose an image or drag &amp; drop here</h4>
+                    <p class="dropzone-formats">Supports JPG, JPEG, PNG, WEBP</p>
+                    <button type="button" class="btn btn-outline btn-sm" id="btnBrowseFile">Select from Device</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab Panel 2: Live Camera Stream -->
+              <div class="tab-panel" id="cameraTab">
+                <div class="camera-stream-box" id="cameraStreamBox">
+                  <video id="liveVideo" autoplay playsinline muted></video>
+                  <div class="camera-reticle">
+                    <div class="reticle-box"></div>
+                    <span class="reticle-note">Position single produce in center with even light</span>
+                  </div>
+                  <div class="camera-permission-notice" id="cameraNotice">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                      <line x1="1" y1="1" x2="23" y2="23"/>
+                    </svg>
+                    <p id="cameraNoticeMsg">Camera access required to snap live photo.</p>
+                    <button type="button" class="btn btn-primary btn-sm" id="btnStartCamera">Enable Camera</button>
+                  </div>
+                </div>
+
+                <div class="camera-action-bar">
+                  <button type="button" class="btn btn-secondary btn-sm" id="btnFlipCamera" title="Switch front/rear camera">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+                    </svg>
+                    Flip Camera
+                  </button>
+                  <button type="button" class="btn btn-primary" id="btnTakeSnapshot">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M19 4h-3.17L14.4 2H9.6L8.17 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
+                    </svg>
+                    Capture Photo
+                  </button>
+                </div>
+              </div>
+
+              <!-- Tab Panel 3: Quick Test Sample Specimens -->
+              <div class="tab-panel" id="samplesTab">
+                <p class="samples-instruction">
+                  Test the unified Canvas computer-vision pipeline using our labelled reference dataset. Each specimen is evaluated in real time through the exact same analysis engine as camera and file uploads:
+                </p>
+
+                <!-- Reference Dataset Filter Controls -->
+                <div class="ref-filters-row" style="display: flex; gap: 0.35rem; flex-wrap: wrap; margin-bottom: 0.85rem;">
+                  <button type="button" class="btn btn-outline btn-sm ref-filter-btn active" data-ref-filter="all" style="padding: 0.25rem 0.55rem; font-size: 0.75rem;">All Specimens (20)</button>
+                  <button type="button" class="btn btn-outline btn-sm ref-filter-btn" data-ref-filter="fresh" style="padding: 0.25rem 0.55rem; font-size: 0.75rem;">Fresh (10)</button>
+                  <button type="button" class="btn btn-outline btn-sm ref-filter-btn" data-ref-filter="spoiled" style="padding: 0.25rem 0.55rem; font-size: 0.75rem;">Spoiled (10)</button>
+                  <button type="button" class="btn btn-outline btn-sm ref-filter-btn" data-ref-filter="fruits" style="padding: 0.25rem 0.55rem; font-size: 0.75rem;">Fruits</button>
+                  <button type="button" class="btn btn-outline btn-sm ref-filter-btn" data-ref-filter="vegetables" style="padding: 0.25rem 0.55rem; font-size: 0.75rem;">Vegetables</button>
+                </div>
+
+                <div class="samples-grid" id="referenceSamplesGrid">
+                  <!-- 1. Apple -->
+                  <button type="button" class="sample-chip" data-sample="fresh-apple" data-group="fresh fruits">
+                    <img src="assets/specimens/fresh_apple.jpg" alt="Crisp Royal Gala Apple" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Crisp Apple</strong>
+                      <span class="sample-status-text fresh">Fresh Specimen</span>
+                    </div>
+                  </button>
+                  <button type="button" class="sample-chip" data-sample="rotten-apple" data-group="spoiled fruits">
+                    <img src="assets/specimens/rotten_apple.jpg" alt="Decayed Apple with Brown Rot" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Rotten Apple</strong>
+                      <span class="sample-status-text danger">Brown &amp; Black Decay</span>
+                    </div>
+                  </button>
+
+                  <!-- 2. Banana -->
+                  <button type="button" class="sample-chip" data-sample="fresh-banana" data-group="fresh fruits">
+                    <img src="assets/specimens/fresh_banana.jpg" alt="Ripe Banana with Sugar Freckles" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Ripe Banana</strong>
+                      <span class="sample-status-text fresh">Sugar Freckles (Normal)</span>
+                    </div>
+                  </button>
+                  <button type="button" class="sample-chip" data-sample="rotten-banana" data-group="spoiled fruits">
+                    <img src="assets/specimens/rotten_banana.jpg" alt="Decayed Banana with Confluent Rot" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Decayed Banana</strong>
+                      <span class="sample-status-text danger">Confluent Black Rot</span>
+                    </div>
+                  </button>
+
+                  <!-- 3. Mango -->
+                  <button type="button" class="sample-chip" data-sample="fresh-mango" data-group="fresh fruits">
+                    <img src="assets/specimens/fresh_mango.jpg" alt="Fresh Alphonso Mango" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Alphonso Mango</strong>
+                      <span class="sample-status-text fresh">Multi-Color Blush</span>
+                    </div>
+                  </button>
+                  <button type="button" class="sample-chip" data-sample="rotten-mango" data-group="spoiled fruits">
+                    <img src="assets/specimens/rotten_mango.jpg" alt="Damaged Mango with Anthracnose" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Damaged Mango</strong>
+                      <span class="sample-status-text danger">Anthracnose Rot</span>
+                    </div>
+                  </button>
+
+                  <!-- 4. Orange -->
+                  <button type="button" class="sample-chip" data-sample="fresh-orange" data-group="fresh fruits">
+                    <img src="assets/specimens/fresh_orange.jpg" alt="Fresh Valencia Orange" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Valencia Orange</strong>
+                      <span class="sample-status-text fresh">Natural Pores &amp; Hue</span>
+                    </div>
+                  </button>
+                  <button type="button" class="sample-chip" data-sample="rotten-orange" data-group="spoiled fruits">
+                    <img src="assets/specimens/rotten_orange.jpg" alt="Moldy Citrus with Penicillium" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Moldy Citrus</strong>
+                      <span class="sample-status-text danger">Penicillium Mold</span>
+                    </div>
+                  </button>
+
+                  <!-- 5. Pomegranate -->
+                  <button type="button" class="sample-chip" data-sample="fresh-pomegranate" data-group="fresh fruits">
+                    <img src="assets/specimens/fresh_pomegranate.jpg" alt="Fresh Ruby Pomegranate" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Ruby Pomegranate</strong>
+                      <span class="sample-status-text fresh">Crimson Rind &amp; Crown</span>
+                    </div>
+                  </button>
+                  <button type="button" class="sample-chip" data-sample="rotten-pomegranate" data-group="spoiled fruits">
+                    <img src="assets/specimens/rotten_pomegranate.jpg" alt="Rotten Pomegranate Decay" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Rotten Pomegranate</strong>
+                      <span class="sample-status-text danger">Soft Brown Decay</span>
+                    </div>
+                  </button>
+
+                  <!-- 6. Tomato -->
+                  <button type="button" class="sample-chip" data-sample="fresh-tomato" data-group="fresh vegetables">
+                    <img src="assets/specimens/fresh_tomato.jpg" alt="Fresh Vine Tomato" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Vine Tomato</strong>
+                      <span class="sample-status-text fresh">Firm &amp; Green Calyx</span>
+                    </div>
+                  </button>
+                  <button type="button" class="sample-chip" data-sample="rotten-tomato" data-group="spoiled vegetables">
+                    <img src="assets/specimens/rotten_tomato.jpg" alt="Decayed Tomato Blossom-End Rot" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Decayed Tomato</strong>
+                      <span class="sample-status-text danger">Blossom-End Rot</span>
+                    </div>
+                  </button>
+
+                  <!-- 7. Potato -->
+                  <button type="button" class="sample-chip" data-sample="fresh-potato" data-group="fresh vegetables">
+                    <img src="assets/specimens/fresh_potato.jpg" alt="Tan Raw Potato" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Tan Potato</strong>
+                      <span class="sample-status-text fresh">Tan Skin &amp; Eyes</span>
+                    </div>
+                  </button>
+                  <button type="button" class="sample-chip" data-sample="rotten-potato" data-group="spoiled vegetables">
+                    <img src="assets/specimens/rotten_potato.jpg" alt="Sprouted Potato with Solanine" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Sprouted Potato</strong>
+                      <span class="sample-status-text danger">Solanine Green Patch</span>
+                    </div>
+                  </button>
+
+                  <!-- 8. Cucumber -->
+                  <button type="button" class="sample-chip" data-sample="fresh-cucumber" data-group="fresh vegetables">
+                    <img src="assets/specimens/fresh_cucumber.jpg" alt="Crisp Green Cucumber" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Crisp Cucumber</strong>
+                      <span class="sample-status-text fresh">Natural Ridges</span>
+                    </div>
+                  </button>
+                  <button type="button" class="sample-chip" data-sample="rotten-cucumber" data-group="spoiled vegetables">
+                    <img src="assets/specimens/rotten_cucumber.jpg" alt="Rotten Cucumber with Mushy Rot" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Rotten Cucumber</strong>
+                      <span class="sample-status-text danger">Soft Mushy Rot</span>
+                    </div>
+                  </button>
+
+                  <!-- 9. Okra -->
+                  <button type="button" class="sample-chip" data-sample="fresh-okra" data-group="fresh vegetables">
+                    <img src="assets/specimens/fresh_okra.jpg" alt="Tender Green Okra Pod" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Tender Okra</strong>
+                      <span class="sample-status-text fresh">Vibrant Green Pod</span>
+                    </div>
+                  </button>
+                  <button type="button" class="sample-chip" data-sample="rotten-okra" data-group="spoiled vegetables">
+                    <img src="assets/specimens/rotten_okra.jpg" alt="Decayed Okra Pod with Tip Rot" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Decayed Okra</strong>
+                      <span class="sample-status-text danger">Bacterial Tip Rot</span>
+                    </div>
+                  </button>
+
+                  <!-- 10. Capsicum -->
+                  <button type="button" class="sample-chip" data-sample="fresh-capsicum" data-group="fresh vegetables">
+                    <img src="assets/specimens/fresh_capsicum.jpg" alt="Glossy Green Capsicum" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Glossy Capsicum</strong>
+                      <span class="sample-status-text fresh">Taut Emerald Skin</span>
+                    </div>
+                  </button>
+                  <button type="button" class="sample-chip" data-sample="rotten-capsicum" data-group="spoiled vegetables">
+                    <img src="assets/specimens/rotten_capsicum.jpg" alt="Damaged Capsicum Anthracnose" class="sample-thumbnail">
+                    <div class="sample-details">
+                      <strong>Damaged Capsicum</strong>
+                      <span class="sample-status-text danger">Sunken Soft Rot</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- Reference Benchmark Bar -->
+                <div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-light); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+                  <button type="button" class="btn btn-outline btn-sm" id="btnRunReferenceBenchmark" style="font-size: 0.78rem; font-weight: 600;">
+                    🔬 Run Live Reference Accuracy Benchmark (20 Tests)
+                  </button>
+                  <span id="benchmarkAccuracyBadge" style="font-size: 0.75rem; font-weight: 600; color: #475569; background: #f1f5f9; padding: 0.25rem 0.5rem; border-radius: 4px; border: 1px solid #cbd5e1;">
+                    Ready to Run (0/20 Tests Completed)
+                  </span>
+                </div>
+
+                <!-- Live Reference Accuracy Benchmark Report Panel -->
+                <div id="benchmarkLiveReport" class="hidden" style="margin-top: 0.85rem; padding: 0.85rem; background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); font-size: 0.8rem;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                    <div style="font-weight: 700; color: var(--text-primary);" id="benchmarkSummaryStats">
+                      Tests Completed: 0/20 | Correct: 0 | Errors: 0 | Accuracy: 0%
+                    </div>
+                    <button type="button" id="btnCloseBenchmarkReport" style="background: none; border: none; font-size: 0.8rem; color: var(--text-secondary); cursor: pointer; font-weight: 600;">✕ Hide Report</button>
+                  </div>
+                  <div style="max-height: 220px; overflow-y: auto; border: 1px solid #e2e8f0; border-radius: 4px; background: #fff;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.75rem; text-align: left;">
+                      <thead style="background: #f1f5f9; position: sticky; top: 0;">
+                        <tr>
+                          <th style="padding: 6px 8px; border-bottom: 1px solid #cbd5e1;">Sample Specimen</th>
+                          <th style="padding: 6px 8px; border-bottom: 1px solid #cbd5e1;">True Condition</th>
+                          <th style="padding: 6px 8px; border-bottom: 1px solid #cbd5e1;">Discoloration</th>
+                          <th style="padding: 6px 8px; border-bottom: 1px solid #cbd5e1;">CV Classification</th>
+                          <th style="padding: 6px 8px; border-bottom: 1px solid #cbd5e1;">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody id="benchmarkTableBody">
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Uploaded Preview Thumbnail & Primary Action Button -->
+            <div class="preview-and-analyze-bar">
+              <div class="preview-mini-box hidden" id="previewMiniBox">
+                <img id="previewThumbnail" alt="Selected produce preview">
+                <button type="button" class="btn-remove-preview" id="btnRemovePreview" title="Remove selected image">✕</button>
+              </div>
+
+              <div class="analyze-btn-cluster">
+                <button type="button" class="btn btn-secondary btn-sm hidden" id="btnOpenCrop" title="Crop image to isolate produce from background">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2v14a2 2 0 0 0 2 2h14"/>
+                    <path d="M18 22V8a2 2 0 0 0-2-2H2"/>
+                  </svg>
+                  Crop Produce
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-analyze" id="btnAnalyzeImage" disabled>
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    <path d="M11 8v6M8 11h6"/>
+                  </svg>
+                  Analyze Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: Processing View, Loading & Results Card -->
+          <div class="tool-card tool-results-card" id="analysisResultsCard">
+            
+            <!-- State 1: Empty Waiting State -->
+            <div class="results-state-empty" id="stateEmpty">
+              <div class="empty-art-circle">
+                <svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+              </div>
+              <h3>Ready to Inspect Produce</h3>
+              <p>Upload a photo or take a live camera shot, then click <strong>"Analyze Image"</strong> to evaluate external skin coloration, discoloration, and dark necrotic spots.</p>
+              <div class="helpful-lighting-hint">
+                💡 <strong>Tip for best accuracy:</strong> Place produce on a clean plain plate or table in steady daylight. Avoid deep shadows or harsh flash glare.
+              </div>
+            </div>
+
+            <!-- State 2: Loading & Scanning Animation State -->
+            <div class="results-state-loading hidden" id="stateLoading">
+              <div class="loading-spinner-wrapper">
+                <div class="green-spinner"></div>
+                <div class="scanning-laser-box">
+                  <div class="laser-scanner"></div>
+                </div>
+              </div>
+              <h3 id="loadingStatusText">Processing Pixels...</h3>
+              <p>Examining RGB histograms, relative luminance, and discoloration density...</p>
+            </div>
+
+            <!-- State 3: Active Results State -->
+            <div class="results-state-active hidden" id="stateActive">
+              
+              <!-- Canvas Stage with Defect Mask Toggle -->
+              <div class="canvas-inspection-stage">
+                <div class="canvas-wrap">
+                  <canvas id="analysisCanvas"></canvas>
+                  <canvas id="defectMaskCanvas" class="overlay-mask hidden"></canvas>
+                </div>
+
+                <div class="stage-toolbar">
+                  <div class="stage-view-toggles">
+                    <button type="button" class="stage-btn active" id="btnViewNormal">Standard View</button>
+                    <button type="button" class="stage-btn" id="btnViewMask">
+                      <span class="mask-dot"></span> Highlight Detected Defect Mask
+                    </button>
+                  </div>
+                  <button type="button" class="btn-clear-analysis" id="btnClearAnalysis">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>
+                    </svg>
+                    Clear Image
+                  </button>
+                </div>
+              </div>
+
+              <!-- Main Outcome Indicator Card -->
+              <div class="outcome-card" id="outcomeCard">
+                <div class="outcome-header-row">
+                  <div class="outcome-status-icon" id="outcomeStatusIcon"></div>
+                  <div class="outcome-title-group">
+                    <span class="outcome-category-badge" id="outcomeCategoryBadge">Result</span>
+                    <h3 class="outcome-headline" id="outcomeHeadline">Evaluation Ready</h3>
+                  </div>
+                </div>
+                <p class="outcome-primary-message" id="outcomePrimaryMessage"></p>
+              </div>
+
+              <!-- Quantitative Metrics Grid (Experimental Image Measurements Only) -->
+              <div class="metrics-dashboard">
+                <div class="metric-meter-box">
+                  <div class="meter-head">
+                    <span class="meter-title">Surface Discoloration Index</span>
+                    <span class="meter-val" id="metricDefectRatio">0%</span>
+                  </div>
+                  <div class="meter-track">
+                    <div class="meter-fill" id="meterFillDefect" style="width: 0%;"></div>
+                  </div>
+                  <span class="meter-sub">Experimental measurement of localized color variation. Not a spoilage percentage or safety score.</span>
+                </div>
+
+                <div class="metric-meter-box">
+                  <div class="meter-head">
+                    <span class="meter-title">Visual Uniformity Rating</span>
+                    <span class="meter-val" id="metricVibrancy">--</span>
+                  </div>
+                  <div class="meter-track">
+                    <div class="meter-fill green" id="meterFillVibrancy" style="width: 0%;"></div>
+                  </div>
+                  <span class="meter-sub">Experimental estimate of skin color consistency.</span>
+                </div>
+              </div>
+
+              <!-- Real-time Pixel Color Distribution Histogram -->
+              <div class="histogram-preview-card">
+                <div class="histogram-header">
+                  <span class="histogram-title">🎨 Canvas Pixel Color Distribution</span>
+                  <span class="histogram-badge">Canvas 2D Spectrum</span>
+                </div>
+                <canvas id="histogramCanvas" width="340" height="42"></canvas>
+                <div class="histogram-legend">
+                  <span class="legend-chip"><span class="legend-color-dot healthy"></span> Healthy Pigmentation</span>
+                  <span class="legend-chip"><span class="legend-color-dot defect"></span> Flagged Blemish/Necrosis</span>
+                </div>
+              </div>
+
+              <!-- Detailed Observations & Handling Advice -->
+              <div class="diagnostics-box">
+                <h4 class="diagnostics-heading">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                  </svg>
+                  Detected Visual Characteristics &amp; Advice:
+                </h4>
+                <ul class="observations-list" id="observationsList"></ul>
+                <div class="handling-recommendation-panel" id="handlingRecommendation"></div>
+              </div>
+
+              <!-- Action Bar -->
+              <div class="results-action-bar">
+                <button type="button" class="btn btn-secondary btn-sm" id="btnAnalyzeAgain">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                  </svg>
+                  Analyze Again
+                </button>
+                <a href="#spoilage-guide" class="btn btn-outline btn-sm">
+                  Review Spoilage Guide &rarr;
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: FRUITS & VEGETABLES INFORMATION ================= -->
+    <section class="section fruits-veg-section" id="fruits-vegetables">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Produce Encyclopedia</span>
+          <h2 class="section-title">Know Your Fruits &amp; Vegetables</h2>
+          <p class="section-subtitle">
+            Learn the natural, healthy appearance of common produce, how to recognize early decay, what to look for at the market, and how to store them safely.
+          </p>
+        </div>
+
+        <!-- Filter Chips: All, Fruits, Vegetables -->
+        <div class="category-filter-chips">
+          <button type="button" class="filter-tab active" data-filter="all">All Produce (14)</button>
+          <button type="button" class="filter-tab" data-filter="fruit">Fruits (7)</button>
+          <button type="button" class="filter-tab" data-filter="vegetable">Vegetables (7)</button>
+        </div>
+
+        <!-- 14 Individual Produce Cards Grid -->
+        <div class="produce-grid" id="produceCardsGrid">
+          
+          <!-- FRUIT 1: Apple -->
+          <div class="produce-card" data-category="fruit" data-id="apple">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=600&q=80" alt="Fresh red apples" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Apple</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Tight, smooth, taut skin with uniform color; heavy for size and firm to gentle thumb pressure.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Soft brown sunken bruises, mealy or mushy flesh, cidery or fermented smell, white core mold.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Choose unblemished apples with intact stems. Avoid wrinkled skins or soft spots near the base.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> High ethylene producer. Store chilled in crisper drawer away from greens.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="apple">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 2: Banana -->
+          <div class="produce-card" data-category="fruit" data-id="banana">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=600&q=80" alt="Fresh yellow bananas" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1543218024-57a70143c369?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Banana</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Even bright yellow peel. Tiny brown speckles ("sugar spots") indicate peak natural sweetness.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Entirely black skin weeping moisture, white fungal mold at stem crown, foul sour fermentation smell.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Select greenish-yellow clusters with intact stem crowns and no deep black split gashes.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Keep at room temperature. Wrap stems with foil or plastic to slow ethylene release.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="banana">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 3: Orange -->
+          <div class="produce-card" data-category="fruit" data-id="orange">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1582979512210-99b6a53386f9?auto=format&fit=crop&w=600&q=80" alt="Fresh oranges" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Orange</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Firm, vibrant orange rind with fine textured pores; feels heavy and juicy in hand.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Greenish-blue or white powdery mold (Penicillium), soft spongy waterlogged depressions.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Look for bright smooth skin free of dull patches or soft discolored spots around the stem navel.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Countertop for 1 week; refrigerate in a mesh bag for up to 3-4 weeks.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="orange">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 4: Mango -->
+          <div class="produce-card" data-category="fruit" data-id="mango">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80" alt="Ripe juicy mangoes" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1591073113125-e46713c829ed?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Mango</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Plump, taut skin with sweet fragrant aroma near the stem; gives slightly to gentle pressure.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Large black sunken anthracnose rot patches, alcoholic smell, leaking fluid, excessively mushy skin.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Focus on sweet fragrance and plumpness rather than color alone; avoid bruised or shriveled skin.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Ripen at room temperature; once soft and ripe, refrigerate for up to 5 days.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="mango">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 5: Grapes -->
+          <div class="produce-card" data-category="fruit" data-id="grapes">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=600&q=80" alt="Fresh grape cluster" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1596363505729-4190a9506133?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Grapes</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Plump, firm berries firmly attached to pliable green stems; natural silvery powdery bloom.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Grey fuzzy mold (Botrytis), sticky shriveled brown berries, loose berries falling off dry brittle stems.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Check the bottom of the bag for moisture or loose berries. Ensure stems are green, not brown.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Do not wash before storing. Keep in original ventilated container in the fridge.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="grapes">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 6: Papaya -->
+          <div class="produce-card" data-category="fruit" data-id="papaya">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1517282009859-f000ec3b26fe?auto=format&fit=crop&w=600&q=80" alt="Fresh ripe papaya" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1617112848923-cc2234396a8d?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Papaya</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Golden-yellow skin with slight green blush; firm yet yields gently under palm pressure.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Sunken dark brown circular lesions, white fuzzy mold spots, fermented vinegar odor, collapsing skin.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Avoid papayas with bruised patches or dark moisture spots. Choose evenly colored yellow-orange fruit.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store unripe papaya at room temperature. Once ripe, chill in fridge for 3-4 days.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="papaya">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 7: Guava -->
+          <div class="produce-card" data-category="fruit" data-id="guava">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1536511132770-e5058c7e8c46?auto=format&fit=crop&w=600&q=80" alt="Fresh green guava" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Guava</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Light green to yellow skin, firm flesh, pleasant floral aroma, free of deep blemishes.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Soft brown waterlogged depressions, pungent over-fermented odor, fruit fly holes, skin collapse.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Choose unblemished guavas with a strong fresh tropical scent. Avoid overly soft or dented fruits.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store at room temperature until ripe, then refrigerate in a paper bag for 2-3 days.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="guava">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 8: Pomegranate -->
+          <div class="produce-card" data-category="fruit" data-id="pomegranate">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80" alt="Fresh pomegranate" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Pomegranate</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Firm, heavy, smooth-skinned rind ranging from deep red to pink or yellowish. Crown end intact and dry.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Soft spongy spots, dark sunken patches, moldy crown, shriveled skin, dried-out lightweight feel, fermented off-odor.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Choose the heaviest pomegranate for its size with a taut, unblemished rind. Avoid fruits with cracks or sunken areas.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store whole at room temperature for up to 2 weeks. Refrigerate for up to 2 months in an airtight bag.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="pomegranate">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 9: Watermelon -->
+          <div class="produce-card" data-category="fruit" data-id="watermelon">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80" alt="Fresh watermelon" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Watermelon</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Dark green striped or solid skin, creamy yellow field spot on underside, symmetrical shape, dull matte surface.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Soft sunken patches, foul sour odor, slimy skin surface, cracks with leaking fluid, white or black mold spots.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Knock on the rind — a hollow thud indicates ripeness. The yellow ground spot should be creamy, not white or green.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Keep whole at room temperature away from sunlight. Once cut, cover tightly and refrigerate.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="watermelon">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 10: Pineapple -->
+          <div class="produce-card" data-category="fruit" data-id="pineapple">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=600&q=80" alt="Fresh pineapple" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Pineapple</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Golden-yellow base with slightly green crown leaves. Sweet tropical fragrance at the base. Firm but slightly yielding eyes.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Dark water-soaked patches at base, mushy soft eyes, fermented alcoholic odor, brown slimy crown leaves.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Smell the base for sweetness. Tug a center leaf — if it comes out easily, the pineapple is ripe. Avoid dark base stains.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store uncut at room temperature for 1-2 days, then refrigerate. Cut pineapple keeps for up to 5 days.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="pineapple">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 11: Sapota -->
+          <div class="produce-card" data-category="fruit" data-id="sapota">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=600&q=80" alt="Fresh sapota chikoo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Sapota (Chikoo)</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Brown, rough, potato-like skin that yields gently to pressure when ripe. Smooth and even surface free of cracks.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Fermented alcoholic odor, overly soft mushy flesh, skin cracks with leaking sticky fluid, white mold patches.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Squeeze gently — ripe sapota yields uniformly. Avoid fruits with hard green patches or sunken soft spots.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Ripen at room temperature. Once ripe, refrigerate for a few days. Keep away from strong-smelling foods.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="sapota">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 12: Sweet Lime -->
+          <div class="produce-card" data-category="fruit" data-id="sweetlime">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Fresh sweet lime mosambi" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Sweet Lime (Mosambi)</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Smooth, pale greenish-yellow to light yellow rind. Heavy for size with high juice content. Firm, unblemished skin.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Blue-green Penicillium mold patches, soft spongy spots, dried shrunken rind, bitter fermented odor.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Choose heavy, blemish-free fruits with tight smooth skin. Avoid fruits with white powder residue or sunken pores.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store at room temperature for 3-4 days or refrigerate in a mesh bag for up to 2 weeks.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="sweetlime">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 13: Lemon -->
+          <div class="produce-card" data-category="fruit" data-id="lemon">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1587486913049-53fc88980cfc?auto=format&fit=crop&w=600&q=80" alt="Fresh lemons" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1587486913049-53fc88980cfc?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Lemon</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Bright, vibrant yellow rind (or slightly green for firm lemons). Smooth, firm, heavy for size indicating good juice content.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>White or blue-green fuzzy mold (Penicillium), soft spongy patches, shriveled wrinkled rind, foul sour-mold odor.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Choose firm lemons heavy for their size with glossy, smooth skin. Avoid lemons with thick, puffy, soft rinds.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store loose in the refrigerator in a mesh bag. Keeps for 3-4 weeks when refrigerated properly.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="lemon">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- FRUIT 14: Muskmelon -->
+          <div class="produce-card" data-category="fruit" data-id="muskmelon">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1571575173700-afb9492d1d9e?auto=format&fit=crop&w=600&q=80" alt="Fresh muskmelon kharbuja" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1571575173700-afb9492d1d9e?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge fruit">Fruit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Muskmelon (Kharbuja)</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Creamy beige to pale orange netted skin. Sweet musky fragrance at the blossom end. Slight softening at blossom end when ripe.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Dark sunken soft spots, slimy netted skin surface, strong fermented alcoholic odor, cracks with leaking fluid.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Smell the blossom end for a sweet musky aroma. The rind should feel slightly rough and netted without cracks.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Ripen at room temperature. Once soft and fragrant, refrigerate and consume within 3-5 days.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="muskmelon">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 1: Tomato -->
+          <div class="produce-card" data-category="vegetable" data-id="tomato">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80" alt="Fresh red tomatoes" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1546470427-227c7369a9b7?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Tomato</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Glossy, taut skin, bright uniform red color, firm yet yields slightly; fresh earthy vine aroma.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Black blossom-end rot on bottom, weeping soft wrinkles, white or green fuzzy mold spots, sour odor.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Select heavy, plump tomatoes with fresh green calyx stems. Avoid bruised or split skins.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store stem-down at room temperature. Avoid refrigeration to preserve flavor.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="tomato">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 2: Potato -->
+          <div class="produce-card" data-category="vegetable" data-id="potato">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80" alt="Fresh raw potatoes" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Potato</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Rock-hard, dry skin, earthy neutral smell, free of green patches and vigorous sprouting eyes.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Green skin (toxic solanine), extensive sprouts, soft spongy zones, foul or musty bacterial odor.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Ensure tubers are solid and smooth without cuts, dark soil caked over bruises, or greenish tint.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store in a cool, dark, well-ventilated basket. Keep far away from onions.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="potato">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 3: Onion -->
+          <div class="produce-card" data-category="vegetable" data-id="onion">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?auto=format&fit=crop&w=600&q=80" alt="Fresh dry onions" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Onion</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Dry, papery outer skin that crackles; firm, heavy bulb with tight dry neck and no sprouting shoots.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Black powdery mold (Aspergillus niger) between layers, soft mushy neck, weeping liquid, foul odor.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Gently squeeze the stem neck to verify firmness. Reject onions with soft spots or wet layers.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store in dry open mesh bags in a cool pantry. Never store inside plastic bags.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="onion">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 4: Brinjal (Eggplant) -->
+          <div class="produce-card" data-category="vegetable" data-id="brinjal">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=600&q=80" alt="Fresh purple brinjal eggplant" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1629851722883-faad543b3558?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Brinjal (Eggplant)</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Smooth, glossy, deep purple skin; firm to the touch with a fresh green stem cap.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Dull wrinkled skin, soft brown mushy spots, waterlogged sunken areas, brown seeds inside.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Look for bright shiny skin without scars. Stem should be green and free of white mold fuzz.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Best stored at 10-12°C. Keep in refrigerator crisper for up to 4-5 days.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="brinjal">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 5: Carrot -->
+          <div class="produce-card" data-category="vegetable" data-id="carrot">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?auto=format&fit=crop&w=600&q=80" alt="Fresh crisp carrots" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1582515073490-39981397c445?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Carrot</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Rigid, bright orange root that snaps cleanly; smooth surface without rubbery bend.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Slimy surface coating (bacterial biofilm), black rot on crown, rubbery flexible texture, mold.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Choose firm, brightly colored carrots. Avoid carrots with green sunburnt tops or cracks.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Remove leafy green tops immediately. Keep in a sealed container in the fridge.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="carrot">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 6: Cabbage -->
+          <div class="produce-card" data-category="vegetable" data-id="cabbage">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?auto=format&fit=crop&w=600&q=80" alt="Fresh crisp cabbage head" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550950158-d0d960dff51b?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cabbage</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Compact, heavy, dense head with crisp, tightly packed outer leaves and clean stem base.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Black or brown slimy outer leaves, grey mold, foul sulfurous odor, spongy lightweight center.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Choose heads that feel heavy for their size with crisp, non-wilted outer wrapping leaves.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Do not wash before storing. Keep whole in refrigerator crisper for up to 3-4 weeks.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="cabbage">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 7: Cauliflower -->
+          <div class="produce-card" data-category="vegetable" data-id="cauliflower">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1568584711075-3d021a7c3ca3?auto=format&fit=crop&w=600&q=80" alt="Fresh white cauliflower head" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1510627498534-cf7e9002facc?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cauliflower</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Clean, creamy-white, tightly packed florets surrounded by crisp, green protective leaves.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Extensive dark brown or black speckles on curd, loose separating florets, slimy texture, sour smell.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Look for solid, heavy white curds. Avoid heads with brown discoloration or yellowish wilting leaves.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store curd-side up in a perforated plastic bag in the refrigerator for 5-7 days.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="cauliflower">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 8: Cucumber -->
+          <div class="produce-card" data-category="vegetable" data-id="cucumber">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=600&q=80" alt="Fresh cucumber" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cucumber</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Firm, dark green, cylindrical body with smooth or slightly bumpy skin. Cool to the touch, heavy with water content.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Yellow or pale skin discoloration, soft spongy spots, slimy skin surface, shriveled wrinkled ends, bitter taste.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Choose cucumbers that are dark green, firm end-to-end. Avoid yellowish cucumbers or those with soft spots.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Wrap in paper towel and store in crisper drawer. Use within 5-7 days. Do not freeze.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="cucumber">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 9: Capsicum -->
+          <div class="produce-card" data-category="vegetable" data-id="capsicum">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=600&q=80" alt="Fresh capsicum bell pepper" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Capsicum (Bell Pepper)</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Bright, shiny, firm skin in red, green, or yellow. Thick walls with crisp snap. Fresh green stem with no browning.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Soft, wrinkled skin, dark sunken spots, white mold near stem, brown slimy interior, shriveled walls.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Choose peppers with thick, rigid walls and shiny, unblemished skin. Fresh green stems indicate recent harvest.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Refrigerate unwashed in crisper drawer. Red and yellow peppers ripen faster than green; use them first.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="capsicum">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 10: Okra -->
+          <div class="produce-card" data-category="vegetable" data-id="okra">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?auto=format&fit=crop&w=600&q=80" alt="Fresh okra bhindi" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1543362906-acfc16c67564?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Okra (Bhindi)</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Bright, vibrant green pods, 5-8 cm long. Tender enough to snap cleanly. Fresh smooth surface without brown patches.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Browning or black spots, slimy mucilaginous surface, soft soggy pods, shriveled dull skin, mold near cut ends.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>The best okra pods snap cleanly without bending. Avoid oversized or yellow pods which are tough and fibrous.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store dry in paper bag in refrigerator. Moisture causes rapid sliming. Use within 3-4 days.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="okra">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 11: Spinach -->
+          <div class="produce-card" data-category="vegetable" data-id="spinach">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=600&q=80" alt="Fresh spinach palak" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Spinach (Palak)</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Vibrant deep green leaves, crisp and firm texture, no visible wilting or yellowing, clean fresh green aroma.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Yellow or brown wilted leaves, slimy wet texture, foul ammonia-like odor, dark mushy patches, visible mold.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Select bunches with deep green, crisp, upright leaves. Avoid pre-bagged spinach with any yellow or wet spots.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store unwashed in an airtight container with a paper towel to absorb moisture. Rinse only before use.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="spinach">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 12: Bitter Gourd -->
+          <div class="produce-card" data-category="vegetable" data-id="bittergourd">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1601745354920-cc5c5cf47f7e?auto=format&fit=crop&w=600&q=80" alt="Fresh bitter gourd karela" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1601745354920-cc5c5cf47f7e?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bitter Gourd (Karela)</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Firm, dark or light green warty ridged skin. Bright, fresh color. No yellowing. Hard flesh that does not give to pressure.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Yellow or orange skin (overripe), soft spongy spots, brown mushy patches, shriveled skin, exposed red seeds inside.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Choose medium-sized, firm, deeply ridged bitter gourds without any yellow tinge. The darker green, the better.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Refrigerate unwashed in a loosely sealed bag. Use within 3-5 days before it yellows and becomes overripe.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="bittergourd">View Detailed Guide</button>
+            </div>
+          </div>
+
+          <!-- VEGETABLE 13: Bottle Gourd -->
+          <div class="produce-card" data-category="vegetable" data-id="bottlegourd">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1626716493174-1b0f2e4be509?auto=format&fit=crop&w=600&q=80" alt="Fresh bottle gourd lauki" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1626716493174-1b0f2e4be509?auto=format&fit=crop&w=600&q=80'">
+              <span class="type-badge veg">Vegetable</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bottle Gourd (Lauki)</h3>
+              <div class="info-row">
+                <span class="info-label">✅ Healthy Appearance:</span>
+                <p>Pale to medium green smooth skin, firm flesh, symmetrical shape, no soft spots. Light fuzz on skin is normal when young.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">⚠️ Common Spoilage Signs:</span>
+                <p>Yellow or brown skin patches, soft spongy spots, foul bitter odor, shriveled ends, sticky sap on cut surfaces.</p>
+              </div>
+              <div class="info-row">
+                <span class="info-label">🛒 What to Observe While Purchasing:</span>
+                <p>Scratch the skin with a fingernail — fresh bottle gourd has tender, moisture-rich skin. Avoid yellowed or hard, dry specimens.</p>
+              </div>
+              <div class="card-footer-tip">
+                <strong>Storage Tip:</strong> Store uncut in a cool dry place for up to a week. Once cut, wrap tightly and refrigerate for 3-4 days.
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-modal-trigger" data-item="bottlegourd">View Detailed Guide</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCE DETAILS MODAL ================= -->
+    <div class="modal-overlay hidden" id="produceModal">
+      <div class="modal-card">
+        <button type="button" class="btn-close-modal" id="btnCloseModal" aria-label="Close details">✕</button>
+        <div class="modal-content-layout" id="modalContentLayout">
+          <!-- Dynamically injected via script.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= CROP PRODUCE MODAL ================= -->
+    <div class="modal-overlay hidden" id="cropModal">
+      <div class="modal-card crop-modal-card">
+        <button type="button" class="btn-close-modal" id="btnCloseCropModal" aria-label="Close crop modal">✕</button>
+        <div class="crop-modal-header">
+          <h3>Crop to Focus on Produce</h3>
+          <p>Isolate the fruit or vegetable to remove background surfaces (tables, clothes, hands) and ensure clean image processing.</p>
+        </div>
+        
+        <div class="crop-stage-wrapper">
+          <div class="crop-stage-viewport" id="cropStageViewport">
+            <canvas id="cropDisplayCanvas"></canvas>
+            <div class="crop-selection-box" id="cropSelectionBox">
+              <span class="crop-dimension-pill" id="cropDimensions">Framing Region</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="crop-controls-panel">
+          <div class="crop-presets-row">
+            <span class="crop-presets-label">Quick Framing Presets:</span>
+            <button type="button" class="btn btn-outline btn-sm crop-preset-btn" data-crop="center-80">Center 80%</button>
+            <button type="button" class="btn btn-outline btn-sm crop-preset-btn" data-crop="center-60">Center 60%</button>
+            <button type="button" class="btn btn-outline btn-sm crop-preset-btn" data-crop="square">Square Focus</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="btnResetCrop">Full Image</button>
+          </div>
+
+          <div class="crop-confirm-row">
+            <button type="button" class="btn btn-secondary" id="btnCancelCrop">Cancel</button>
+            <button type="button" class="btn btn-primary" id="btnApplyCrop">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Apply Crop &amp; Focus
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SECTION 6: SPOILAGE AWARENESS GUIDE ================= -->
+    <section class="section spoilage-section" id="spoilage-guide">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Visual Pathology Guide</span>
+          <h2 class="section-title">How to Identify Spoiled Fruits and Vegetables</h2>
+          <p class="section-subtitle">
+            Microorganisms like fungi (molds and yeasts) and bacteria break down cellular plant walls. Here are the 6 visible warning signs to check before preparing or eating produce.
+          </p>
+        </div>
+
+        <div class="spoilage-guide-grid">
+          
+          <!-- Card 1: Dark Spots -->
+          <div class="spoilage-card">
+            <div class="spoilage-card-icon warning-bg">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
+                <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/>
+                <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/>
+              </svg>
+            </div>
+            <div class="spoilage-card-content">
+              <h3>1. Dark Spots</h3>
+              <p>Unusual dark or black patches may indicate bruising, physical injury, or deep fungal spoilage. While superficial brown speckles on bananas indicate natural sugar ripeness, sunken dark lesions on apples, tomatoes, or citrus often signal tissue breakdown that invites microbial rot.</p>
+              <div class="action-tag inspect">Inspect Depth &bull; Trim Deeply if Surface Only</div>
+            </div>
+          </div>
+
+          <!-- Card 2: Visible Mold -->
+          <div class="spoilage-card">
+            <div class="spoilage-card-icon danger-bg">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/>
+                <path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/>
+              </svg>
+            </div>
+            <div class="spoilage-card-content">
+              <h3>2. Visible Mold</h3>
+              <p>Fuzzy, velvety, or powdery growth in shades of white, blue, green, or grey is a direct indicator of active fungal colonies. Mold spores penetrate soft fruits and produce dangerous mycotoxins. <strong>Never taste visibly moldy produce</strong>, as inhaling or ingesting mold spores poses respiratory and digestive risks.</p>
+              <div class="action-tag discard">Do Not Taste &bull; Discard Soft Produce</div>
+            </div>
+          </div>
+
+          <!-- Card 3: Discoloration -->
+          <div class="spoilage-card">
+            <div class="spoilage-card-icon neutral-bg">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <div class="spoilage-card-content">
+              <h3>3. Discoloration</h3>
+              <p>Unusual color shifts, such as green patches on potatoes (solanine accumulation), yellowing on leafy greens, or dull brown water-soaked blotches on peppers. Discoloration indicates enzymatic oxidation, chlorophyll breakdown, or toxic alkaloid production.</p>
+              <div class="action-tag caution">Discard Green Potatoes &bull; Trim Browning</div>
+            </div>
+          </div>
+
+          <!-- Card 4: Soft or Damaged Areas -->
+          <div class="spoilage-card">
+            <div class="spoilage-card-icon danger-bg">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+              </svg>
+            </div>
+            <div class="spoilage-card-content">
+              <h3>4. Soft or Damaged Areas</h3>
+              <p>Leaking, mushy, collapsed, or severely indented areas are clear signs that bacterial soft rot has dissolved the plant's internal cellular pectin. Leaking fluid indicates that microbial contamination has spread throughout the flesh.</p>
+              <div class="action-tag discard">Immediate Discard &bull; High Bacterial Risk</div>
+            </div>
+          </div>
+
+          <!-- Card 5: Wrinkled and Shriveled Skin -->
+          <div class="spoilage-card">
+            <div class="spoilage-card-icon info-bg">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+            </div>
+            <div class="spoilage-card-content">
+              <h3>5. Wrinkled and Shriveled Skin</h3>
+              <p>Excessive wrinkling indicates severe dehydration, cell collapse, and extended aging. While slightly wrinkled peppers or apples may remain safe to cook in stews or purees if free from mold, rubbery limpness marks the end of acceptable shelf life.</p>
+              <div class="action-tag cook">Cook Promptly &bull; Discard if Mushy</div>
+            </div>
+          </div>
+
+          <!-- Card 6: Unpleasant Smell -->
+          <div class="spoilage-card">
+            <div class="spoilage-card-icon warning-bg">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
+                <path d="M12 12v9"/><path d="m16 16-4-4-4 4"/>
+              </svg>
+            </div>
+            <div class="spoilage-card-content">
+              <h3>6. Unpleasant Smell</h3>
+              <p>A foul, sour, fermented, or alcoholic smell is an unmistakable warning sign of anaerobic bacterial decomposition or wild yeast fermentation. <em>Important:</em> An uploaded image cannot detect odor, so you must always use your own sense of smell before eating!</p>
+              <div class="action-tag discard">Trust Your Senses &bull; Discard Immediately</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 7: FOOD SAFETY TIPS ================= -->
+    <section class="section safety-section" id="safety-tips">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Public Health Practice</span>
+          <h2 class="section-title">Simple Habits for Safer Food</h2>
+          <p class="section-subtitle">
+            Adopt practical food hygiene habits recommended by public health guidelines to protect your family and extend the life of your fresh produce.
+          </p>
+        </div>
+
+        <div class="safety-habits-grid">
+          
+          <div class="habit-card">
+            <div class="habit-num">01</div>
+            <h4>Choose Fresh-Looking Produce</h4>
+            <p>Select fruits and vegetables that are vibrant, firm, and free of deep bruises, mold, or skin punctures.</p>
+          </div>
+
+          <div class="habit-card">
+            <div class="habit-num">02</div>
+            <h4>Avoid Visible Mold or Severe Damage</h4>
+            <p>Never buy or consume soft produce with visible mold fuzz. Spores spread invisibly deep into porous plant tissues.</p>
+          </div>
+
+          <div class="habit-card">
+            <div class="habit-num">03</div>
+            <h4>Wash Under Clean Running Water</h4>
+            <p>Always wash produce under running tap water right before preparation. Never wash produce before refrigerator storage.</p>
+          </div>
+
+          <div class="habit-card">
+            <div class="habit-num">04</div>
+            <h4>Keep Raw and Ready-to-Eat Foods Separate</h4>
+            <p>Use separate cutting boards and knives for fresh produce and raw meats to prevent dangerous cross-contamination.</p>
+          </div>
+
+          <div class="habit-card">
+            <div class="habit-num">05</div>
+            <h4>Store Produce According to Requirements</h4>
+            <p>Keep ethylene-releasing produce (apples, bananas) away from ethylene-sensitive items (greens, potatoes, carrots).</p>
+          </div>
+
+          <div class="habit-card">
+            <div class="habit-num">06</div>
+            <h4>Refrigerate Perishables Promptly</h4>
+            <p>Refrigerate cut, sliced, or peeled produce at or below 4°C (40°F) within two hours of preparation.</p>
+          </div>
+
+          <div class="habit-card">
+            <div class="habit-num">07</div>
+            <h4>Remove Damaged Produce Promptly</h4>
+            <p>Immediately discard any decaying fruit from your fruit bowl. One rotting item accelerates spoilage for all nearby produce.</p>
+          </div>
+
+          <div class="habit-card">
+            <div class="habit-num">08</div>
+            <h4>Keep Storage Areas &amp; Utensils Clean</h4>
+            <p>Sanitize crisper drawers, refrigerator shelves, cutting boards, and knives regularly to stop mold spore transfer.</p>
+          </div>
+
+        </div>
+
+        <!-- Subsection: Before You Buy (Smart Shopping Tips) -->
+        <div class="before-you-buy-box">
+          <div class="buy-box-header">
+            <span class="shopping-cart-icon">🛒</span>
+            <div>
+              <h3>Before You Buy: Smart Market Shopping Tips</h3>
+              <p>Simple inspection habits to help you choose high-quality produce at the market or grocery store:</p>
+            </div>
+          </div>
+          
+          <div class="buy-tips-columns">
+            <div class="buy-tip-col">
+              <h5>👀 1. Inspect Stems &amp; Crowns</h5>
+              <p>Check the stem end of melons, squash, and oranges. A brown, shriveled, or weeping stem indicates old stock.</p>
+            </div>
+            <div class="buy-tip-col">
+              <h5>⚖️ 2. Feel the Weight</h5>
+              <p>Fresh citrus, apples, and tomatoes should feel heavy for their size, indicating high juice content and crisp cellular turgor.</p>
+            </div>
+            <div class="buy-tip-col">
+              <h5>👃 3. Smell the Blossom End</h5>
+              <p>Fresh mangoes, melons, and tomatoes have an earthy, sweet aroma. Avoid items with a sour, fermented, or musty smell.</p>
+            </div>
+            <div class="buy-tip-col">
+              <h5>📦 4. Check the Container Bottom</h5>
+              <p>When buying pre-packaged berries or grapes, always inspect the bottom of the carton for squashed fruits or damp fungal juice.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 8: ABOUT OUR PROJECT ================= -->
+    <section class="section about-section" id="about-project">
+      <div class="container">
+        
+        <div class="about-grid-layout">
+          
+          <div class="about-main-text">
+            <span class="section-tag">Community Service Project</span>
+            <h2 class="section-title">About FreshCheck</h2>
+            
+            <div class="project-title-hero-card">
+              <span class="sub-project-tag">PROJECT TITLE:</span>
+              <h3>AI-Based Detection of Unsafe Fruits and Vegetables</h3>
+              <span class="project-type-pill">Project Type: Community Service Project (CSP)</span>
+            </div>
+
+            <div class="objectives-container">
+              <h4>🎯 Project Objectives</h4>
+              <ol class="objectives-ordered-list">
+                <li><strong>Identify visible signs</strong> of fruit and vegetable spoilage through client-side visual inspection.</li>
+                <li><strong>Improve food-safety awareness</strong> among the general public, students, and community members.</li>
+                <li><strong>Provide easy image-based visual screening</strong> accessible on any smartphone or browser.</li>
+                <li><strong>Promote safer food-handling practices</strong> to prevent avoidable household foodborne illnesses.</li>
+                <li><strong>Educate people</strong> about identifying damaged, spoiled, and unwholesome produce.</li>
+              </ol>
+            </div>
+
+            <div class="approach-container">
+              <h4>🔬 Project Approach &amp; Methodology</h4>
+              <p>
+                The website uses <strong>basic image-processing techniques</strong> to examine the external visual characteristics of fruits and vegetables. By converting uploaded pixels into RGB luminance and HSV/HSL color distributions, it deterministically detects necrotic lesions, browning oxidation, and fungal spore patches.
+              </p>
+              <p>
+                It provides an <strong>initial visual screening result and educational guidance</strong>. The system is designed strictly as a public awareness and educational tool, running 100% on the client device without sending images to external cloud servers, and does not guarantee food safety.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sidebar: Team, Guide & Department Details -->
+          <div class="about-sidebar-card">
+            
+            <div class="team-card-header">
+              <span class="academic-cap">🎓</span>
+              <div>
+                <h4>Academic Details</h4>
+                <p>Community Service Project Submission</p>
+              </div>
+            </div>
+
+            <div class="team-meta-section">
+              <span class="meta-heading">PROJECT TEAM</span>
+              <ul class="team-members-list">
+                <li>
+                  <span class="student-avatar">DP</span>
+                  <span class="student-name">Degala Priyanka</span>
+                </li>
+                <li>
+                  <span class="student-avatar">BS</span>
+                  <span class="student-name">Buggala Sirisha</span>
+                </li>
+                <li>
+                  <span class="student-avatar">CJ</span>
+                  <span class="student-name">Choragudi Jubeda</span>
+                </li>
+                <li>
+                  <span class="student-avatar">GP</span>
+                  <span class="student-name">Gullapudi Pavani</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="guide-meta-section">
+              <span class="meta-heading">PROJECT GUIDE</span>
+              <div class="guide-badge-box">
+                <span class="guide-avatar">👩‍🏫</span>
+                <div>
+                  <strong>Ms. Y. Geetha Sri</strong>
+                  <span class="guide-deg">M.Tech.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dept-meta-section">
+              <span class="meta-heading">DEPARTMENT</span>
+              <div class="dept-box">
+                <strong>Department of Computer Science and Engineering</strong>
+              </div>
+            </div>
+
+            <div class="community-pledge-box">
+              <p>
+                "Empowering communities with simple digital screening and food safety education to make every meal safer."
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 9: REINFORCED DISCLAIMER BANNER ================= -->
+    <section class="banner-disclaimer-strip">
+      <div class="container banner-disclaimer-inner">
+        <div class="disclaimer-mini-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+        </div>
+        <p class="disclaimer-mini-text">
+          <strong>Mandatory Food Safety Notice:</strong> FreshCheck is an educational awareness and initial visual screening tool. It examines only the external appearance of fruits and vegetables. It cannot detect bacteria, viruses, pesticides, chemicals, toxins or other invisible contamination. A fruit or vegetable that appears fresh is not necessarily safe to consume. Always follow proper food hygiene, washing and storage practices. Do not depend solely on this tool to decide whether food is safe.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SECTION 10: FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-main-grid">
+      
+      <!-- Brand & Project Summary -->
+      <div class="footer-brand-col">
+        <div class="brand-logo footer-logo">
+          <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 22c1.25-.97 2.45-2.02 3.6-3.15C8.95 15.5 11 11.5 11 7c0-2.5-1.5-4.5-1.5-4.5S16 3 18.5 7.5c2 3.6 1.8 8.2-.5 11.5L2 22z" fill="currentColor" fill-opacity="0.2"/>
+            <path d="M9 12c3.5 1 6.5 4 8 8"/>
+          </svg>
+          <span class="brand-title">Fresh<span class="brand-highlight">Check</span></span>
+        </div>
+        <p class="footer-project-desc">
+          AI-Based Detection of Unsafe Fruits and Vegetables &bull; A College Community Service Project creating public awareness about visible produce spoilage and domestic food safety.
+        </p>
+        <div class="footer-dept-badge">
+          Department of Computer Science and Engineering
+        </div>
+      </div>
+
+      <!-- Quick Navigation Links -->
+      <div class="footer-nav-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#check-produce">Check Produce</a></li>
+          <li><a href="#fruits-vegetables">Fruits &amp; Vegetables</a></li>
+          <li><a href="#spoilage-guide">Spoilage Guide</a></li>
+          <li><a href="#safety-tips">Food Safety Tips</a></li>
+          <li><a href="#about-project">About Project</a></li>
+        </ul>
+      </div>
+
+      <!-- Food Safety Awareness Message & Disclaimer -->
+      <div class="footer-safety-col">
+        <h4>Food Safety Awareness</h4>
+        <p class="footer-safety-note">
+          Always practice strict kitchen hygiene: wash produce under clean running water, keep raw foods separate, maintain refrigerator temperatures under 4°C (40°F), and promptly discard produce with visible mold fuzz.
+        </p>
+        <p class="footer-disclaimer-short">
+          <em>Community Service Project &bull; Educational initial screening tool. Does not replace professional food laboratory testing.</em>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom Statement -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-inner">
+        <p class="footer-closing-statement">
+          &ldquo;Small Checks. Safer Choices. Healthier Communities.&rdquo;
+        </p>
+        <p class="footer-copyright">
+          FreshCheck &bull; Community Service Project &bull; Dept. of Computer Science and Engineering
+        </p>
+        <a href="#home" class="btn-back-to-top" aria-label="Back to top">
+          Back to top ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TensorFlow.js Library (Browser Inference Runtime) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+  <!-- FreshCheck Pre-Trained Spoilage Neural Network Model -->
+  <script src="assets/models/freshcheck_spoilage_model.js"></script>
+  <!-- FreshCheck Spatial Patch Spoilage Segmentor Model -->
+  <script src="assets/models/freshcheck_patch_model.js"></script>
+  <!-- Application Logic -->
+  <script src="assets/specimens/specimens_data.js"></script>
+  <script src="script.js?v=20261108_6"></script>
+</body>
+</html>
